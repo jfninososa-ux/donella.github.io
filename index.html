@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donella Mini Donas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ESTILOS Y COLORES BLINDADOS*/
+        .font-script { font-family: 'Pacifico', cursive; }
+        body { font-family: 'Outfit', sans-serif; background-color: #FFFFFF; }
+        html { scroll-behavior: smooth; }
+
+        .txt-donella-fucsia { color: #DE5D9B !important; }
+        .txt-donella-rosa { color: #E56CB3 !important; }
+        
+        .bg-donella-fondo-pastel { background: linear-gradient(to bottom, #FFF0F5, #FFFFFF); }
+        .bg-donella-rosa-solido { background-color: #E56CB3 !important; }
+        .bg-donella-cards { background-color: #FDF2F4 !important; }
+        .bg-donella-wpp-card { background-color: #EEFBF4 !important; }
+        .bg-donella-wpp-boton { background-color: #61D87E !important; }
+        
+        .border-donella-rosa { border-color: #E56CB3 !important; }
+    </style>
+</head>
+<body class="text-gray-700 antialiased">
+
+    <header class="bg-white/90 sticky top-0 z-50 px-6 py-3 flex justify-between items-center max-w-7xl mx-auto border-b border-pink-50">
+        <a href="#" class="flex items-center">
+            <img src="logo.png" alt="Logo Donella Mini Donas" class="h-12 w-auto object-contain">
+        </a>
+        <div class="flex items-center space-x-3">
+            <a href="menu.html" class="border border-donella-rosa text-donella-rosa bg-white hover:bg-pink-50 px-5 py-2 rounded-full text-sm font-medium transition shadow-sm">
+                Menú
+            </a>
+            <a href="conocenos.html" class="bg-donella-rosa-solido hover:opacity-90 text-white px-5 py-2 rounded-full text-sm font-medium transition shadow-sm">
+                Conocenos
+            </a>
+        </div>
+    </header>
+
+    <section class="bg-donella-fondo-pastel pt-12 pb-6 text-center px-4 flex flex-col items-center">
+        <div class="max-w-2xl mx-auto space-y-4">
+            <p class="text-xs font-semibold tracking-widest txt-donella-fucsia uppercase flex items-center justify-center gap-1">
+                ✨ ARTESANALES CON AMOR ✨
+            </p>
+            <h1 class="text-5xl md:text-6xl font-normal txt-donella-fucsia font-script">
+                Mini Donas
+            </h1>
+            <p class="text-sm md:text-base txt-donella-rosa max-w-md mx-auto leading-relaxed">
+                Irresistibles, esponjosas y llenas de sabor. Hechas para endulzar tu día.
+            </p>
+            <div class="pt-2">
+                <a href="#contactanos" class="bg-donella-rosa-solido hover:opacity-95 text-white font-medium px-6 py-3 rounded-full shadow-md inline-flex items-center gap-2 text-sm transition">
+                    🛍️ ¡Haz tu pedido!
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full max-w-4xl mx-auto mt-10 px-4 flex flex-col items-center justify-center">
+            <div class="w-full relative rounded-3xl overflow-hidden shadow-lg border border-pink-100 aspect-[16/8] max-h-[400px] bg-gray-50">
+                <img id="fotoCarrusel" src="empaque_vacio.png" 
+                     alt="Donella Mini Donas Exhibición" 
+                     class="w-full h-full object-contain transition duration-500">
+            </div>
+            <div class="flex justify-center space-x-1.5 mt-4">
+                <span class="w-2 h-2 rounded-full bg-pink-200"></span>
+                <span class="w-2 h-2 rounded-full bg-pink-200"></span>
+                <span class="w-5 h-2 rounded-full bg-donella-rosa-solido"></span>
+                <span class="w-2 h-2 rounded-full bg-pink-200"></span>
+                <span class="w-2 h-2 rounded-full bg-pink-200"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="sabores" class="py-16 bg-white px-4">
+        <div class="text-center max-w-md mx-auto mb-12 space-y-2">
+            <p class="text-xs font-semibold tracking-widest txt-donella-rosa uppercase flex items-center justify-center gap-1.5">
+                🍩 NUESTROS PRODUCTOS
+            </p>
+            <h2 class="text-4xl font-normal txt-donella-fucsia font-script">Sabores</h2>
+            <p class="text-xs txt-donella-rosa">Cada dona es elaborada con ingredientes frescos y mucho amor. Elige tu favorita.</p>
+        </div>
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-pink-100 p-4 flex flex-col justify-between">
+                <div class="relative">
+                    <img src="dona_fresa_glaseado.png" alt="Mini Dona Glaseado Fresa" class="w-full h-60 object-cover rounded-2xl">
+                    <span class="absolute top-3 right-3 bg-pink-100 txt-donella-fucsia text-[10px] font-bold px-3 py-1 rounded-full uppercase">Favorita</span>
+                </div>
+                <div class="pt-4 space-y-2 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold txt-donella-fucsia flex items-center gap-1.5">🍓 Especialidad Fresa</h3>
+                        <p class="text-xs txt-donella-rosa leading-relaxed">Nuestra mini dona clásica bañada en un sedoso glaseado rosa de fresa natural y lluvia de colores.</p>
+                    </div>
+                    <a href="#contactanos" class="w-full bg-donella-cards txt-donella-fucsia hover:bg-pink-100 text-xs py-2.5 rounded-2xl font-semibold flex items-center justify-center gap-1.5 transition mt-4">
+                        🛍️ Quiero una
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-pink-100 p-4 flex flex-col justify-between">
+                <div class="relative">
+                    <img src="dona_caramelo_chips.png" alt="Mini Dona Caramelo Chocolate Chips" class="w-full h-60 object-cover rounded-2xl">
+                    <span class="absolute top-3 right-3 bg-amber-100 text-amber-700 text-[10px] font-bold px-3 py-1 rounded-full uppercase">Deluxe</span>
+                </div>
+                <div class="pt-4 space-y-2 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold txt-donella-fucsia flex items-center gap-1.5">🍫 Caramelo & Chips</h3>
+                        <p class="text-xs txt-donella-rosa leading-relaxed">Doble tentación: suave caramelo artesanal cubierto de crujientes chispas de chocolate semi-amargo.</p>
+                    </div>
+                    <a href="#contactanos" class="w-full bg-donella-cards txt-donella-fucsia hover:bg-pink-100 text-xs py-2.5 rounded-2xl font-semibold flex items-center justify-center gap-1.5 transition mt-4">
+                        🛍️ Quiero una
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-pink-100 p-4 flex flex-col justify-between">
+                <div class="relative">
+                    <img src="dona_arequipe_mms.png" alt="Mini Dona Arequipe y toppings" class="w-full h-60 object-cover rounded-2xl">
+                    <span class="absolute top-3 right-3 bg-purple-100 text-purple-600 text-[10px] font-bold px-3 py-1 rounded-full uppercase">Especial</span>
+                </div>
+                <div class="pt-4 space-y-2 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold txt-donella-fucsia flex items-center gap-1.5">🍯 Dona de Arequipe</h3>
+                        <p class="text-xs txt-donella-rosa leading-relaxed">Bañada en dulce arequipe tradicional con toppings crujientes seleccionados. Cremosa y con todo el sabor casero.</p>
+                    </div>
+                    <a href="#contactanos" class="w-full bg-donella-cards txt-donella-fucsia hover:bg-pink-100 text-xs py-2.5 rounded-2xl font-semibold flex items-center justify-center gap-1.5 transition mt-4">
+                        🛍️ Quiero una
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contactanos" class="py-16 bg-gradient-to-b from-white to-pink-50/20 px-4">
+        <div class="text-center max-w-md mx-auto mb-12 space-y-2">
+            <p class="text-xs font-semibold tracking-widest txt-donella-rosa uppercase">💌 ENCUÉNTRANOS</p>
+            <h2 class="text-4xl font-normal txt-donella-fucsia font-script">Contáctanos</h2>
+            <p class="text-xs txt-donella-rosa">Escríbenos y recibe tus donas favoritas.</p>
+        </div>
+
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            <div class="bg-donella-wpp-card border border-emerald-100 rounded-3xl p-6 text-center space-y-3 flex flex-col items-center justify-between">
+                <div class="w-12 h-12 rounded-2xl bg-emerald-100 flex items-center justify-center text-emerald-600 text-xl font-bold">💬</div>
+                <div>
+                    <h3 class="font-bold text-emerald-800 text-base">WhatsApp</h3>
+                    <p class="text-xs text-emerald-600">Haz tu pedido ahora</p>
+                </div>
+                <a href="https://wa.me/573001234567" target="_blank" class="border border-emerald-300 text-emerald-700 bg-white px-4 py-1.5 rounded-full text-xs font-medium hover:bg-emerald-50 transition">
+                    ¡Pedir por WhatsApp!
+                </a>
+            </div>
+
+            <div class="bg-donella-cards border border-pink-100 rounded-3xl p-6 text-center space-y-3 flex flex-col items-center justify-between">
+                <div class="w-12 h-12 rounded-2xl bg-pink-100 flex items-center justify-center txt-donella-fucsia text-xl font-bold">📸</div>
+                <div>
+                    <h3 class="font-bold txt-donella-fucsia text-base">Instagram</h3>
+                    <p class="text-xs text-pink-500/70">@minidonela</p>
+                </div>
+                <a href="https://www.instagram.com/minidonela?igsh=YXB6Y3g4dHFoNmZp" target="_blank" class="border border-pink-300 txt-donella-fucsia bg-white px-4 py-1.5 rounded-full text-xs font-medium hover:bg-pink-50 transition">
+                    Ver nuestro perfil
+                </a>
+            </div>
+
+            <div class="bg-red-50/50 border border-red-100 rounded-3xl p-6 text-center space-y-3 flex flex-col items-center justify-between">
+                <div class="w-12 h-12 rounded-2xl bg-red-100 flex items-center justify-center text-red-500 text-xl font-bold">📍</div>
+                <div>
+                    <h3 class="font-bold text-red-800 text-base">Ubicación</h3>
+                    <p class="text-xs text-red-500/70">Villavicencio, Meta</p>
+                </div>
+                <span class="border border-red-200 text-red-600 bg-white px-4 py-1.5 rounded-full text-xs font-medium inline-block">
+                    📍 Colombia
+                </span>
+            </div>
+        </div>
+
+        <div class="text-center space-y-3 max-w-sm mx-auto px-4">
+            <a href="https://wa.me/573001234567" target="_blank" class="w-full bg-donella-wpp-boton hover:opacity-95 text-white font-semibold py-4 px-6 rounded-full shadow-lg flex items-center justify-center gap-2 text-sm transition">
+                💬 ¡Hacer mi pedido por WhatsApp!
+            </a>
+            <p class="text-xs txt-donella-rosa font-medium flex items-center justify-center gap-1">
+                Respondemos rápido 🌸
+            </p>
+        </div>
+    </section>
+
+    <footer class="bg-gradient-to-t from-pink-100/30 to-white border-t border-pink-100 py-8 text-center text-xs txt-donella-rosa px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-5">
+            <div class="flex items-center gap-3">
+                <img src="logo.png" alt="Logo Donella" class="h-10 w-auto object-contain">
+                <span>• Villavicencio, Meta • Colombia</span>
+            </div>
+            <div class="flex space-x-5 text-lg">
+                <a href="https://wa.me/573001234567" target="_blank" class="hover:scale-110 transition">💬</a>
+                <a href="https://www.instagram.com/minidonela?igsh=YXB6Y3g4dHFoNmZp" target="_blank" class="hover:scale-110 transition">📸</a>
+            </div>
+            <div>
+                © 2026 Donella Mini Donas • Hecho con 💗
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const misFotos = [
+            "empaque_vacio.png",       
+            "torre_chocolate.png",
+            "dona_arequipe_mms.png"      
+        ];
+
+        let currentIndex = 0;
+        const imgElement = document.getElementById('fotoCarrusel');
+
+        function rotarImagenes() {
+            currentIndex = (currentIndex + 1) % misFotos.length;
+            imgElement.src = misFotos[currentIndex];
+        }
+
+        // Cambia la imagen de forma continua cada 3 segundos
+        setInterval(rotarImagenes, 3000);
+    </script>
+
+</body>
+</html>
